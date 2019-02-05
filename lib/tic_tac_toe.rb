@@ -56,7 +56,7 @@ class TicTacToe
     if turn_count(@board) % 2 == 0
       player = "X"
     else
-      @board = "O"
+      player = "O"
     end
   end
   
