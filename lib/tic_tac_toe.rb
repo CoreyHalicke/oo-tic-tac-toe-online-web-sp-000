@@ -102,6 +102,13 @@ class TicTacToe
     end
   end
   
-  
+  def full?(board)
+    if board.all?{|i| i == "X" || i == "O"}
+      return true
+    else
+      board.any?{|i| i == " "}
+        return false
+    end
+  end
   
 end
