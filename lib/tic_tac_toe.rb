@@ -121,7 +121,13 @@ class TicTacToe
     end
   end
   
-  
+  def winner
+    if won?
+      winning_array = won?
+      i = winning_array[0]
+      return @board[i]
+    end
+  end
   
   
   
